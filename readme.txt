@@ -1,10 +1,5 @@
 # H&W Publishing - Single Page Web Application
 
-![GitHub last commit](https://img.shields.io/github/last-commit/hwpublishing/hw-single-page)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hwpublishing/hw-single-page)
-![GitHub contributors](https://img.shields.io/github/contributors/hwpublishing/hw-single-page)
-![GitHub license](https://img.shields.io/github/license/hwpublishing/hw-single-page)
-
 Este projeto foi desenvolvido para a H&W Publishing como parte de um teste de desenvolvimento front-end. A aplicação consiste em uma única página que inclui um formulário de captura de leads, seguido por uma apresentação de produtos após o envio bem-sucedido do formulário.
 
 ## 🚀 Funcionalidades Principais
@@ -43,7 +38,7 @@ Este projeto foi desenvolvido para a H&W Publishing como parte de um teste de de
 
 1. Clone o repositório para seu ambiente local.
 ```bash
-git clone https://github.com/hwpublishing/hw-single-page.git
+git clone https://github.com/felipetarla/HW-Teste-Desenvolvedor.git
 ```
 2. Abra o arquivo `index.html` em um navegador moderno para visualizar a aplicação.
 3. Certifique-se de estar conectado à internet para carregar os recursos externos, como Google Fonts e bibliotecas CSS/JS.
