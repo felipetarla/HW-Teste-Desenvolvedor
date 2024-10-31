@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="H&W Publishing" />
+    <meta name="keywords" content="H&W, publishing, teste, desenvolvedor" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>H&W Publishing | Teste Desenvolvedor</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Formulário de Captura de Leads -->
+    <div id="lead-form-container">
+      <form id="lead-form">
+        <h2>Cadastre-se para continuar</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" name="phone" required />
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Estrutura do Modal -->
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-image" />
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+
+    <!-- Preloader da Pagina -->
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Menu Mobile Inicio -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="canvas-close">
+        <i class="fa fa-close"></i>
+      </div>
+      <nav class="canvas-menu">
+        <ul>
+          <li class="active"><a href="#inicio">Inicio</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <div class="canvas-social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <!-- Menu Mobile Fim -->
+
+    <!-- Header Inicio -->
+    <header class="header-section">
+      <div class="canvas-open">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="img/logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <nav class="nav-menu">
+              <ul>
+                <li class="active"><a href="#inicio">Inicio</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-3">
+            <div class="top-option">
+              <div class="to-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Fim -->
+
+    <!-- Hero Inicio -->
+    <section id="inicio" class="hero-section">
+      <div class="hs-slider swiper-container hero-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide Personalizado -->
+          <div
+            class="swiper-slide hs-item set-bg"
+            data-setbg="img/hero/hero-1.jpg"
+          >
+            <!-- Conteúdo do slide personalizado -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <div class="hi-text">
+                    <span class="hi-greeting">
+                      Olá, <span class="welcome-name"></span>
+                    </span>
+                    <h1>Confira <strong>ofertas</strong> exclusivas</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide hs-item set-bg"
+            data-setbg="img/hero/hero-3.jpg"
+          >
+            <!-- Conteúdo do slide 1 -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <div class="hi-text">
+                    <span>Suplemento Internacional</span>
+                    <h1>O <strong>whey</strong> mais avaliado</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide hs-item set-bg"
+            data-setbg="img/hero/hero-2.jpg"
+          >
+            <!-- Conteúdo do slide 2 -->
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <div class="hi-text">
+                    <span>Creatina Pura</span>
+                    <h1>A <strong>creatina</strong> mais avaliada</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Hero Fim -->
+
+    <!-- Mais Vendidos Inicio -->
+    <section id="produtos" class="vendidos-section spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>Conheça os 05</span>
+              <h2>MAIS VENDIDOS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="class-item">
+              <div class="ci-pic">
+                <img src="img/vendidos/vendidos-1.jpg" alt="" />
+              </div>
+              <div class="ci-text">
+                <span>Whey 3W</span>
+                <h4>R$ 119,90</h4>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="class-item">
+              <div class="ci-pic">
+                <img src="img/vendidos/vendidos-2.jpg" alt="" />
+              </div>
+              <div class="ci-text">
+                <span>Whey Hidrolisado</span>
+                <h4>R$ 89,90</h4>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="class-item">
+              <div class="ci-pic">
+                <img src="img/vendidos/vendidos-3.jpg" alt="" />
+              </div>
+              <div class="ci-text">
+                <span>Whey Isolado</span>
+                <h4>R$ 99,90</h4>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="class-item">
+              <div class="ci-pic">
+                <img src="img/vendidos/vendidos-4.jpg" alt="" />
+              </div>
+              <div class="ci-text">
+                <span>Whey Concentrado</span>
+                <h4>R$ 119,90</h4>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="class-item">
+              <div class="ci-pic">
+                <img src="img/vendidos/vendidos-5.jpg" alt="" />
+              </div>
+              <div class="ci-text">
+                <span>Kit 2x Whey Protein</span>
+                <h4>R$ 169,90</h4>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mais Vendidos Fim -->
+
+    <div id="main-content" style="display: none">
+      <!-- Banner Inicio -->
+      <!-- Banner Inicio -->
+      <section
+        id="ofertas"
+        class="banner-section set-bg"
+        data-setbg="img/banner-bg.jpg"
+        data-setbg-mobile="img/banner-bg-mobile.jpg"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="bs-text">
+                <div class="bt-tips">
+                  <span id="days"></span>d <span id="hours"></span>h
+                  <span id="minutes"></span>m <span id="seconds"></span>s
+                </div>
+                <a href="#" class="primary-btn btn-normal"
+                  >Aproveitar desconto</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Fim -->
+
+      <!-- Galeria Inicio -->
+      <div class="galeria-section">
+        <div class="galeria">
+          <div class="grid-sizer"></div>
+          <div class="gs-item set-bg" data-setbg="img/galeria/galeria-1.jpg">
+            <a href="img/galeria/galeria-1.jpg" class="thumb-icon image-popup"
+              ><i class="fa fa-picture-o"></i
+            ></a>
+          </div>
+          <div class="gs-item set-bg" data-setbg="img/galeria/galeria-2.jpg">
+            <a href="img/galeria/galeria-2.jpg" class="thumb-icon image-popup"
+              ><i class="fa fa-picture-o"></i
+            ></a>
+          </div>
+          <div class="gs-item set-bg" data-setbg="img/galeria/galeria-3.jpg">
+            <a href="img/galeria/galeria-3.jpg" class="thumb-icon image-popup"
+              ><i class="fa fa-picture-o"></i
+            ></a>
+          </div>
+          <div class="gs-item set-bg" data-setbg="img/galeria/galeria-4.jpg">
+            <a href="img/galeria/galeria-4.jpg" class="thumb-icon image-popup"
+              ><i class="fa fa-picture-o"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Galeria Fim -->
+
+      <!-- Feedback Inicio -->
+      <section id="clientes" class="feedback-section spad">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title">
+                <span>Feedback</span>
+                <h2>O que nossos clientes dizem</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container feedback-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide ts_item">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <div class="ti_pic">
+                      <img src="img/feedback/feedback-1.png" alt="" />
+                    </div>
+                    <div class="ti_text">
+                      <p>
+                        O Whey Isolado da H&W é excelente! <br />A qualidade da
+                        proteína é perceptível, com rápida absorção e zero
+                        desconforto.<br />
+                        Ótimo para definir e recuperar após treinos intensos.
+                        Recomendo!
+                      </p>
+                      <h5>Felipe Tarla</h5>
+                      <div class="tt-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide ts_item">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <div class="ti_pic">
+                      <img src="img/feedback/feedback-2.png" alt="" />
+                    </div>
+                    <div class="ti_text">
+                      <p>
+                        Adorei o Whey Concentrado da H&W! <br />Proporciona boa
+                        energia, recuperação muscular e o sabor é muito bom.
+                        <br />Ótima opção para quem quer qualidade com bom
+                        custo-benefício.
+                      </p>
+                      <h5>João Silva</h5>
+                      <div class="tt-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Controles de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Feedback Fim -->
+
+      <!-- Rodape Inicio -->
+      <section class="footer-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="fs-about">
+                <div class="fa-logo">
+                  <a href="#"><img src="img/logo.png" alt="" /></a>
+                </div>
+                <p>
+                  A H&W é uma holding inovadora com sede nos Estados Unidos,
+                  especializada em marketing de afiliados no mercado de
+                  suplementos.
+                </p>
+                <div class="fa-social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-envelope-o"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="fs-widget">
+                <h4>H&W</h4>
+                <ul>
+                  <li><a href="#">Sobre Nós</a></li>
+                  <li><a href="#">Troca e Devolução</a></li>
+                  <li><a href="#">Formas de Pagamento</a></li>
+                  <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="fs-widget">
+                <h4>Suporte</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contato</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Minha Conta</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="copyright-text">
+                <p>
+                  H&W Publishing &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Todos os direitos reservados
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Rodape Fim -->
+    </div>
+    <!-- Fim do Conteúdo Principal -->
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
