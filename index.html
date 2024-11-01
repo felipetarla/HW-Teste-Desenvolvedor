@@ -2,8 +2,14 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="H&W Publishing" />
-    <meta name="keywords" content="H&W, publishing, teste, desenvolvedor" />
+    <meta
+      name="description"
+      content="A H&W Publishing é uma holding inovadora dos Estados Unidos, especializada em marketing de afiliados no mercado de suplementos. Descubra recursos, guias e tutoriais para aprimorar suas estratégias de marketing e vendas."
+    />
+    <meta
+      name="keywords"
+      content="H&W Publishing, marketing de afiliados, mercado de suplementos, estratégias de marketing, guias de marketing, tutoriais de vendas"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>H&W Publishing | Teste Desenvolvedor</title>
@@ -31,7 +37,7 @@
 
   <body>
     <!-- Formulário de Captura de Leads -->
-    <div id="lead-form-container">
+    <section id="lead-form-container">
       <form id="lead-form">
         <h2>Cadastre-se para continuar</h2>
         <label for="name">Nome:</label>
@@ -42,27 +48,27 @@
         <input type="text" id="phone" name="phone" required />
         <button type="submit">Enviar</button>
       </form>
-    </div>
+    </section>
 
     <!-- Estrutura do Modal -->
-    <div id="modal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="modal-image" />
-      <a class="prev">&#10094;</a>
-      <a class="next">&#10095;</a>
-    </div>
+    <section id="modal" class="modal">
+      <button class="close" aria-label="Fechar">&times;</button>
+      <img class="modal-content" id="modal-image" alt="Imagem do Modal" />
+      <button class="prev" aria-label="Anterior">&#10094;</button>
+      <button class="next" aria-label="Próximo">&#10095;</button>
+    </section>
 
     <!-- Preloader da Pagina -->
-    <div id="preloder">
+    <div id="preloader" role="status" aria-label="Carregando">
       <div class="loader"></div>
     </div>
 
     <!-- Menu Mobile Inicio -->
     <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu-wrapper">
-      <div class="canvas-close">
-        <i class="fa fa-close"></i>
-      </div>
+    <nav class="offcanvas-menu-wrapper" aria-label="Menu Mobile">
+      <button class="canvas-close" aria-label="Fechar Menu">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </button>
       <nav class="canvas-menu">
         <ul>
           <li class="active"><a href="#inicio">Inicio</a></li>
@@ -73,26 +79,28 @@
       </nav>
 
       <div class="canvas-social">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"
+          ><i class="fa fa-facebook" aria-hidden="true"></i
+        ></a>
+        <a href="#" aria-label="Instagram"
+          ><i class="fa fa-instagram" aria-hidden="true"></i
+        ></a>
       </div>
-    </div>
+    </nav>
     <!-- Menu Mobile Fim -->
 
-    <div class="canvas-open">
-      <i class="fa fa-bars"></i>
-    </div>
+    <button class="canvas-open" aria-label="Abrir Menu">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
 
     <!-- Header Inicio -->
     <header class="header-section">
-
-
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-3">
             <div class="logo">
               <a href="./index.html">
-                <img src="img/logo.png" alt="" />
+                <img src="img/logo.png" alt="Logo da H&W Publishing" />
               </a>
             </div>
           </div>
@@ -109,8 +117,12 @@
           <div class="col-lg-3">
             <div class="top-option">
               <div class="to-social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a href="#" aria-label="Instagram"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -127,6 +139,7 @@
           <div
             class="swiper-slide hs-item set-bg"
             data-setbg="img/hero/hero-1.jpg"
+            aria-label="Slide de ofertas exclusivas"
           >
             <!-- Conteúdo do slide personalizado -->
             <div class="container">
@@ -147,6 +160,7 @@
           <div
             class="swiper-slide hs-item set-bg"
             data-setbg="img/hero/hero-3.jpg"
+            aria-label="Slide do Whey mais avaliado"
           >
             <!-- Conteúdo do slide 1 -->
             <div class="container">
@@ -165,6 +179,7 @@
           <div
             class="swiper-slide hs-item set-bg"
             data-setbg="img/hero/hero-2.jpg"
+            aria-label="Slide da Creatina mais avaliada"
           >
             <!-- Conteúdo do slide 2 -->
             <div class="container">
@@ -181,8 +196,16 @@
         </div>
 
         <!-- Controles de navegação -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div
+          class="swiper-button-next"
+          aria-label="Próximo Slide"
+          role="button"
+        ></div>
+        <div
+          class="swiper-button-prev"
+          aria-label="Slide Anterior"
+          role="button"
+        ></div>
       </div>
     </section>
     <!-- Hero Fim -->
@@ -199,79 +222,110 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <article class="col-lg-4 col-md-6">
             <div class="class-item">
               <div class="ci-pic">
-                <img src="img/vendidos/vendidos-1.jpg" alt="" />
+                <img
+                  src="img/vendidos/vendidos-1.jpg"
+                  alt="Imagem do produto Whey 3W"
+                />
               </div>
               <div class="ci-text">
                 <span>Whey 3W</span>
                 <h4>R$ 119,90</h4>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                <a href="#" aria-label="Ver detalhes do produto Whey 3W"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
+          </article>
+          <article class="col-lg-4 col-md-6">
             <div class="class-item">
               <div class="ci-pic">
-                <img src="img/vendidos/vendidos-2.jpg" alt="" />
+                <img
+                  src="img/vendidos/vendidos-2.jpg"
+                  alt="Imagem do produto Whey Hidrolisado"
+                />
               </div>
               <div class="ci-text">
                 <span>Whey Hidrolisado</span>
                 <h4>R$ 89,90</h4>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                <a
+                  href="#"
+                  aria-label="Ver detalhes do produto Whey Hidrolisado"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
+          </article>
+          <article class="col-lg-4 col-md-6">
             <div class="class-item">
               <div class="ci-pic">
-                <img src="img/vendidos/vendidos-3.jpg" alt="" />
+                <img
+                  src="img/vendidos/vendidos-3.jpg"
+                  alt="Imagem do produto Whey Isolado"
+                />
               </div>
               <div class="ci-text">
                 <span>Whey Isolado</span>
                 <h4>R$ 99,90</h4>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                <a href="#" aria-label="Ver detalhes do produto Whey Isolado"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
+          </article>
+          <article class="col-lg-6 col-md-6">
             <div class="class-item">
               <div class="ci-pic">
-                <img src="img/vendidos/vendidos-4.jpg" alt="" />
+                <img
+                  src="img/vendidos/vendidos-4.jpg"
+                  alt="Imagem do produto Whey Concentrado"
+                />
               </div>
               <div class="ci-text">
                 <span>Whey Concentrado</span>
                 <h4>R$ 119,90</h4>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                <a
+                  href="#"
+                  aria-label="Ver detalhes do produto Whey Concentrado"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6">
+          </article>
+          <article class="col-lg-6">
             <div class="class-item">
               <div class="ci-pic">
-                <img src="img/vendidos/vendidos-5.jpg" alt="" />
+                <img
+                  src="img/vendidos/vendidos-5.jpg"
+                  alt="Imagem do produto Kit 2x Whey Protein"
+                />
               </div>
               <div class="ci-text">
                 <span>Kit 2x Whey Protein</span>
                 <h4>R$ 169,90</h4>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
+                <a
+                  href="#"
+                  aria-label="Ver detalhes do produto Kit 2x Whey Protein"
+                  ><i class="fa fa-angle-right" aria-hidden="true"></i
+                ></a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
     <!-- Mais Vendidos Fim -->
 
-    <div id="main-content" style="display: none">
-      <!-- Banner Inicio -->
+    <main id="main-content" style="display: none">
       <!-- Banner Inicio -->
       <section
         id="ofertas"
         class="banner-section set-bg"
         data-setbg="img/banner-bg.jpg"
         data-setbg-mobile="img/banner-bg-mobile.jpg"
+        aria-label="Seção de Ofertas"
       >
         <div class="container">
           <div class="row">
@@ -281,7 +335,10 @@
                   <span id="days"></span>d <span id="hours"></span>h
                   <span id="minutes"></span>m <span id="seconds"></span>s
                 </div>
-                <a href="#" class="primary-btn btn-normal"
+                <a
+                  href="#"
+                  class="primary-btn btn-normal"
+                  aria-label="Aproveitar desconto"
                   >Aproveitar desconto</a
                 >
               </div>
@@ -292,31 +349,63 @@
       <!-- Banner Fim -->
 
       <!-- Galeria Inicio -->
-      <div class="galeria-section">
+      <section class="galeria-section">
         <div class="galeria">
           <div class="grid-sizer"></div>
-          <div class="gs-item set-bg" style="width: calc(50% 10px); height: 472px" data-setbg="img/galeria/galeria-1.jpg">
-            <a href="img/galeria/galeria-1.jpg" class="thumb-icon image-popup">
+          <figure
+            class="gs-item set-bg"
+            style="width: calc(50% 10px); height: 472px"
+            data-setbg="img/galeria/galeria-1.jpg"
+          >
+            <a
+              href="img/galeria/galeria-1.jpg"
+              class="thumb-icon image-popup"
+              aria-label="Visualizar imagem 1"
+            >
               <i class="fa fa-picture-o"></i>
             </a>
-          </div>
-          <div class="gs-item set-bg" style="width: calc(50% 10px); height: 472px" data-setbg="img/galeria/galeria-2.jpg">
-            <a href="img/galeria/galeria-2.jpg" class="thumb-icon image-popup">
+          </figure>
+          <figure
+            class="gs-item set-bg"
+            style="width: calc(50% 10px); height: 472px"
+            data-setbg="img/galeria/galeria-2.jpg"
+          >
+            <a
+              href="img/galeria/galeria-2.jpg"
+              class="thumb-icon image-popup"
+              aria-label="Visualizar imagem 2"
+            >
               <i class="fa fa-picture-o"></i>
             </a>
-          </div>
-          <div class="gs-item set-bg" style="width: calc(50% 10px); height: 472px" data-setbg="img/galeria/galeria-3.jpg">
-            <a href="img/galeria/galeria-3.jpg" class="thumb-icon image-popup"
-              ><i class="fa fa-picture-o"></i
-            ></a>
-          </div>
-          <div class="gs-item set-bg" style="width: calc(50% 10px); height: 472px;" data-setbg="img/galeria/galeria-4.jpg">
-            <a href="img/galeria/galeria-4.jpg" class="thumb-icon image-popup"
-              ><i class="fa fa-picture-o"></i
-            ></a>
-          </div>
+          </figure>
+          <figure
+            class="gs-item set-bg"
+            style="width: calc(50% 10px); height: 472px"
+            data-setbg="img/galeria/galeria-3.jpg"
+          >
+            <a
+              href="img/galeria/galeria-3.jpg"
+              class="thumb-icon image-popup"
+              aria-label="Visualizar imagem 3"
+            >
+              <i class="fa fa-picture-o"></i>
+            </a>
+          </figure>
+          <figure
+            class="gs-item set-bg"
+            style="width: calc(50% 10px); height: 472px"
+            data-setbg="img/galeria/galeria-4.jpg"
+          >
+            <a
+              href="img/galeria/galeria-4.jpg"
+              class="thumb-icon image-popup"
+              aria-label="Visualizar imagem 4"
+            >
+              <i class="fa fa-picture-o"></i>
+            </a>
+          </figure>
         </div>
-      </div>
+      </section>
       <!-- Galeria Fim -->
 
       <!-- Feedback Inicio -->
@@ -337,7 +426,10 @@
                 <div class="row">
                   <div class="col-lg-12 text-center">
                     <div class="ti_pic">
-                      <img src="img/feedback/feedback-1.png" alt="" />
+                      <img
+                        src="img/feedback/feedback-1.png"
+                        alt="Foto do cliente Felipe Tarla"
+                      />
                     </div>
                     <div class="ti_text">
                       <p>
@@ -348,12 +440,15 @@
                         Recomendo!
                       </p>
                       <h5>Felipe Tarla</h5>
-                      <div class="tt-rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                      <div
+                        class="tt-rating"
+                        aria-label="Classificação: 5 de 5 estrelas"
+                      >
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
@@ -365,7 +460,10 @@
                 <div class="row">
                   <div class="col-lg-12 text-center">
                     <div class="ti_pic">
-                      <img src="img/feedback/feedback-2.png" alt="" />
+                      <img
+                        src="img/feedback/feedback-2.png"
+                        alt="Foto do cliente João Silva"
+                      />
                     </div>
                     <div class="ti_text">
                       <p>
@@ -375,12 +473,15 @@
                         custo-benefício.
                       </p>
                       <h5>João Silva</h5>
-                      <div class="tt-rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                      <div
+                        class="tt-rating"
+                        aria-label="Classificação: 5 de 5 estrelas"
+                      >
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                       </div>
                     </div>
                   </div>
@@ -388,21 +489,31 @@
               </div>
             </div>
             <!-- Controles de navegação -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div
+              class="swiper-button-next"
+              aria-label="Próximo Feedback"
+              role="button"
+            ></div>
+            <div
+              class="swiper-button-prev"
+              aria-label="Feedback Anterior"
+              role="button"
+            ></div>
           </div>
         </div>
       </section>
       <!-- Feedback Fim -->
 
       <!-- Rodape Inicio -->
-      <section class="footer-section">
+      <footer class="footer-section">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="fs-about">
                 <div class="fa-logo">
-                  <a href="#"><img src="img/logo.png" alt="" /></a>
+                  <a href="#"
+                    ><img src="img/logo.png" alt="Logo da H&W Publishing"
+                  /></a>
                 </div>
                 <p>
                   A H&W é uma holding inovadora com sede nos Estados Unidos,
@@ -410,9 +521,15 @@
                   suplementos.
                 </p>
                 <div class="fa-social">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                  <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-envelope-o"></i></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                  <a href="#" aria-label="E-mail"
+                    ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -450,9 +567,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </footer>
       <!-- Rodape Fim -->
-    </div>
+    </main>
     <!-- Fim do Conteúdo Principal -->
 
     <!-- Scripts -->
