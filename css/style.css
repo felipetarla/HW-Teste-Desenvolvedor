@@ -1021,6 +1021,26 @@ ul, ol {
 }
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
+  .header-section {
+      display: none;
+ }
+  .canvas-open {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      font-size: 22px;
+      width: 40px;
+      height: 40px;
+      color: #ffffff;
+      background: #151515;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      line-height: 40px;
+      text-align: center;
+      z-index: 1001;
+      display: block;
+      cursor: pointer;
+ }
   .offcanvas-menu-overlay {
       position: fixed;
       left: 0;
@@ -1037,28 +1057,12 @@ ul, ol {
   .offcanvas-menu-overlay.active {
       visibility: visible;
  }
-  .canvas-open {
-      position: absolute;
-      right: 40px;
-      top: 61px;
-      font-size: 22px;
-      width: 30px;
-      height: 30px;
-      color: #ffffff;
-      border: 1px solid #ffffff;
-      border-radius: 2px;
-      line-height: 29px;
-      text-align: center;
-      z-index: 1;
-      display: block;
-      cursor: pointer;
- }
   .offcanvas-menu-wrapper {
       position: fixed;
       left: -300px;
       top: 0;
       width: 300px;
-      z-index: 999;
+      z-index: 1000;
       background: #ffffff;
       overflow-y: auto;
       height: 100%;
@@ -1109,40 +1113,11 @@ ul, ol {
   .offcanvas-menu-wrapper .canvas-social a:last-child {
       margin-right: 0;
  }
-  .offcanvas-menu-wrapper .slicknav_btn {
+  .nav-menu {
       display: none;
  }
-  .offcanvas-menu-wrapper .slicknav_menu {
-      background: transparent;
-      padding: 0;
- }
-  .offcanvas-menu-wrapper .slicknav_nav {
-      display: block !important;
- }
-  .offcanvas-menu-wrapper .slicknav_nav ul {
-      margin: 0;
- }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row, .offcanvas-menu-wrapper .slicknav_nav a {
-      padding: 10px 0;
-      margin: 0;
-      color: #151515;
-      border-bottom: 1px solid #151515;
-      font-weight: 500;
-      font-family: "Oswald", sans-serif;
-      font-size: 15px;
- }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row:hover {
-      border-radius: 0;
-      background: transparent;
-      color: #f36100;
- }
-  .offcanvas-menu-wrapper .slicknav_nav .slicknav_row:hover a {
-      color: #f36100;
- }
-  .offcanvas-menu-wrapper .slicknav_nav a:hover {
-      border-radius: 0;
-      background: transparent;
-      color: #f36100;
+  .top-option {
+      display: none;
  }
   .banner-section {
       height: 250px;
@@ -1163,12 +1138,6 @@ ul, ol {
       font-size: 14px;
       padding: 5px;
       border-radius: 8%;
- }
-  .nav-menu {
-      display: none;
- }
-  .top-option {
-      display: none;
  }
   .galeria .gs-item {
       width: 100%;
@@ -1251,7 +1220,6 @@ ul, ol {
   #lead-form button {
       padding: 10px;
       font-size: 14px;
-      / 
  }
 }
 /* Small Device = 320px */
