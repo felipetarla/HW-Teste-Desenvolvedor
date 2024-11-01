@@ -26,12 +26,19 @@ Este projeto foi desenvolvido para a H&W Publishing como parte de um teste de de
 ├── css/
 │   ├── style.css
 │   ├── bootstrap.min.css
-│   └── ...
+│   ├── flaticon.css
+│   └── font-awesome.min
 ├── js/
 │   ├── main.js
 │   └── bootstrap.min.js
 └── img/
-    └── ...
+    └── feedback/
+    └── galeria/
+    └── hero/
+    └── vendidos/
+    └── banner-bg-mobile.jpg
+    └── banner-bg.jpg
+    └── logo.png
 ```
 
 ## 📚 Instruções de Instalação
